@@ -4,6 +4,7 @@
  */
 package tp3_heroic_fantasy_olutchi;
 
+import Arme.*;
 /**
  *
  * @author PC
