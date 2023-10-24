@@ -8,17 +8,18 @@ package Arme;
  *
  * @author PC
  */
-public class Baton {
+public class Baton extends Arme {
 
-    int âge;
+    int Age;
 
-    public Baton(int âge) {
-        this.âge = âge;
-        if (âge > 100) {
-            âge = 100;
+    public Baton(String Nom, int niveau ,int Age ) {
+        super(Nom, niveau);
+        this.Age = Age;
+        if (Age > 100) {
+            Age = 100;
         }
-        if (âge < 0) {
-            âge = 0;
+        if (Age < 0) {
+            Age = 0;
         }
     }
 

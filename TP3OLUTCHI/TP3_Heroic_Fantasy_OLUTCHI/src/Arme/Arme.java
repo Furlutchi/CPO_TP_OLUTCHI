@@ -8,30 +8,17 @@ package Arme;
  *
  * @author PC
  */
+public abstract class Arme {
 
+    String nom;
+    int Attaque;
 
-    
-    
+    public Arme(String Nom, int niveau) {
+        nom = Nom;
+        Attaque = niveau;}
 
-    public class Arme {
-        String nom;
-        int Attaque ;
-        
-        public Arme (String Nom ,int niveau ){
-         nom=Nom ;
-         Attaque= niveau;
-         
-                 
-        }
-        
-    
-
-   
     @Override
     public String toString() {
-        return "LaclasseArme{" + "nom=" + nom + ", niveau=" + Attaque+ '}';
+        return "LaclasseArme{" + "nom=" + nom + ", niveau=" + Attaque + '}';
     }
-    }
-
-
-
+}
