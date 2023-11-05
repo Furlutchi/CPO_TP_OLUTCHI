@@ -10,14 +10,13 @@ package lightoff_olutchi_version_console;
  */
 public class LightOff_OLUTCHI_version_console {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // verification de la classe cellulelumineuse 
-        CelluleLumineuse p =new CelluleLumineuse();
-        p.activerCellule();
-        System.out.println(p);
+        GrilleDeCellules grille = new GrilleDeCellules(7,7);
+        Partie partie = new Partie(grille);
+        partie.initialiserPartie();
+        partie.lancerPartie();
+
     }
-    
+
 }
+
