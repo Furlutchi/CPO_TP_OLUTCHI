@@ -18,8 +18,8 @@ public class GRILLE extends JPanel{
     
     // tableau de carreaux utilisés pour dessiner la grille
     private TilesFile[] tiles;
-    // définir l'objectif comme une valeur de 2048 à partir du fichier NumbersAndColorsFile
-    public static NumbersAndColorsFile goal = NumbersAndColorsFile._2048;
+    // définir l'objectif comme une valeur de 2048 à partir du fichier Nombreetcouleur
+    public static Nombreetcouleur goal = Nombreetcouleur._2048;
 
     private static final Color BG_COLOR = new Color(0x87CEEB);
     //définir la police de caractères des chiffres, la taille et le style de police peuvent être modifiés ici
@@ -231,7 +231,7 @@ public class GRILLE extends JPanel{
     
     // dessine la tuile
     private void drawTile(Graphics g, TilesFile tile, int x, int y) {
-        NumbersAndColorsFile val = tile.value();
+        Nombreetcouleur val = tile.value();
         int xOffset = offsetCoors(x);
         int yOffset = offsetCoors(y);
         g.setColor(val.color());
